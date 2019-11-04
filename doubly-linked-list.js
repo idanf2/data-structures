@@ -38,6 +38,7 @@ class DoublyLinkedList {
         } else {
             if (index === 0) {
                 newNode.next = this.head;
+                this.head.previous = newNode;
                 this.head = newNode;
             } else if (index === this.size) {
                 this.tail.next = newNode;
@@ -59,6 +60,10 @@ class DoublyLinkedList {
     traverseList(index) {
         if (index > this.size - 1 || index < 0) {
             throw new Error('Out Of Range');
+        }
+
+        if(index === this.size - 1) {
+            return this.tail;
         }
 
         let currNode = this.head;
@@ -90,6 +95,7 @@ class DoublyLinkedList {
         }
 
         this.size--;
+        return nodeToRemove.value;
     }
 
     printList() {
