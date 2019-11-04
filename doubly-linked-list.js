@@ -115,3 +115,5 @@ myLinkedList.printList();
 myLinkedList.remove(2);
 myLinkedList.printList();
 // myLinkedList.reverse()
+
+module.exports = DoublyLinkedList;
