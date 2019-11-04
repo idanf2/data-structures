@@ -36,12 +36,15 @@ class MyArray {
 
 }
 
-const myArray = new MyArray();
-console.log(myArray.push('hi'));
-console.log(myArray.push('you'));
-console.log(myArray.push('!'));
-console.log(myArray.pop());
-console.log(myArray.deleteAtIndex(0));
-console.log(myArray.push('are'));
-console.log(myArray.push('nice'));
-console.log(myArray);
+function example() {
+    const myArray = new MyArray();
+    console.log(myArray.push('hi'));
+    console.log(myArray.push('you'));
+    console.log(myArray.push('!'));
+    console.log(myArray.pop());
+    console.log(myArray.deleteAtIndex(0));
+    console.log(myArray.push('are'));
+    console.log(myArray.push('nice'));
+    console.log(myArray);
+}
+

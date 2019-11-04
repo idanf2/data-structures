@@ -78,11 +78,14 @@ class HashTable {
     }
 }
 
-const myHashTable = new HashTable(50);
-myHashTable.set('grapes', 10000);
-myHashTable.set('grapes', 1);
-console.log(myHashTable.get('grapes'));
-myHashTable.remove('grapes');
-console.log(myHashTable.get('grapes'));
-myHashTable.set('apples', 9);
-console.log(myHashTable.get('apples'));
+function example() {
+    const myHashTable = new HashTable(50);
+    myHashTable.set('grapes', 10000);
+    myHashTable.set('grapes', 1);
+    console.log(myHashTable.get('grapes'));
+    myHashTable.remove('grapes');
+    console.log(myHashTable.get('grapes'));
+    myHashTable.set('apples', 9);
+    console.log(myHashTable.get('apples'));
+}
+

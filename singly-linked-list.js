@@ -98,14 +98,17 @@ class SinglyLinkedList {
     }
 }
 
-let myLinkedList = new SinglyLinkedList();
-myLinkedList.append(10);
-myLinkedList.append(5);
-myLinkedList.append(16);
-myLinkedList.prepend(1);
-myLinkedList.insert(2, 99);
-myLinkedList.insert(5, 88);
-console.log(myLinkedList.printList());
-myLinkedList.remove(2);
-console.log(myLinkedList.printList());
+
+function example() {
+    let myLinkedList = new SinglyLinkedList();
+    myLinkedList.append(10);
+    myLinkedList.append(5);
+    myLinkedList.append(16);
+    myLinkedList.prepend(1);
+    myLinkedList.insert(2, 99);
+    myLinkedList.insert(5, 88);
+    console.log(myLinkedList.printList());
+    myLinkedList.remove(2);
+    console.log(myLinkedList.printList());
 // myLinkedList.reverse()
+}
