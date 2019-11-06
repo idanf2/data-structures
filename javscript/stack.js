@@ -1,5 +1,3 @@
-const DoublyLinkedList =  require("./doubly-linked-list");
-
 class Stack {
     constructor(){
         this.data = []
